@@ -1,0 +1,3 @@
+git+git://github.com/tiwo/avatar-generator.git
+#avatar-generator
+wxPython
