@@ -8,7 +8,6 @@ class Bitmap(wx.StaticBitmap):
         self._image = wx.Image(imagepath, wx.BITMAP_TYPE_ANY)
         super().__init__(parent, label=wx.Bitmap(self._image))
         self.Bind(wx.EVT_SIZE, self.onSize, self)
-        print(dir(self._image))
     def onSize(self, event):
         slotwidth, slotheight = self.Size
         imgwidth = self._image.GetWidth()
